@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "TTLakes";
+  src: url(./fonts/TTLakes-Regular.ttf);
+  font-weight: normal;
+}
+
+body {
+  margin: 0px;
+  font-weight: normal;
+  min-width: 100vw;
+  height: 234px;
+  font-family: "TTLakes";
+  background: #f8f8f8;
+}
+
+.slider {
+  margin: 0px;
+
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #7e7e82;
+  background: #ffffff;
+  border-top: solid 1px #d9fff5;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .slider {
+    padding: 10px 20px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+.swiper__container {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  /* overflow: scroll; */
+}
+
+.swiper-slide {
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  height: 72px;
+  position: relative;
+  min-width: 200px;
+  margin: 8px 8px;
+  padding: 0px 10px;
+  max-width: 200px;
+}
+
+.swipper-slide-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+}
+
+.swipper__button {
+  padding: 0px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.swiper-wrapper {
+  display: flex;
+  padding: 5px;
+  /* flex-wrap: nowrap; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-more {
+  background-color: #f8f8f8;
+  border: none;
+  font-family: "tt_lakes";
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.read-more-img {
+  margin-left: 20px;
+}
+
+.swiper-pagination {
+  margin-bottom: 743px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  /* .button-read {
+    display: none;
+  } */
+
+  .btn-more {
+    display: none;
+  }
+
+  .read-more-img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-brand {
+    display: none !important;
+  }
+
+  .visible-brand {
+    display: block !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    height: 72px;
+    position: relative;
+    min-width: 200px;
+    margin: 8px 8px;
+    padding: 0px 10px;
+  }
+}
